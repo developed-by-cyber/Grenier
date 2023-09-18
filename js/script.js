@@ -9,7 +9,7 @@ window.addEventListener("scroll", () =>{
         lists.forEach(lis =>{
             lis.style.color= "white";
         })
-        logo.style.color= "white";
+        // logo.style.color= "white";
         bt1.classList.add("login");
         bt2.classList.add("reg");
     }else{
@@ -17,8 +17,9 @@ window.addEventListener("scroll", () =>{
         lists.forEach(lis =>{
             lis.style.color= "#233A95";
         })
-        logo.style.color= "#233A95";
+        // logo.style.color= "#233A95";
         bt1.classList.remove("login");
         bt2.classList.remove("reg");
     }
 })
+console.log(bt1);

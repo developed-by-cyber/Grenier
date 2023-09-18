@@ -4,7 +4,7 @@
     box-sizing: border-box !important;
 }
 body{
-    background-color: #EEEFF3 !important; 
+    background-color: #C9D0EC !important; 
 }
 a{
     color: unset !important;
@@ -45,9 +45,10 @@ nav .btns button:last-child.reg{
 }
 header{
     background-color: #3151d131;
-    height: 100dvh;
+    min-height: 100vh;
     padding: 0px 130px;
     position: relative;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -56,6 +57,9 @@ nav{
     width: 100%;
     height: 15vh;
     font-family: Poppins, sans-serif, monospace;
+}
+nav .log img{
+    margin-top: -4px;
 }
 nav .logo{
     color: #233A95;
@@ -310,7 +314,7 @@ nav .btns button:last-child{
     padding: 50px 130px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding-bottom: 100px;
 }
 .how-to-work .left{
     width: 40%;
@@ -411,9 +415,9 @@ nav .btns button:last-child{
 .sub{
     width: 100%;
     height: fit-content;
-    /* background-color: #233A95; */
-    margin: 70px 0px;
-    padding: 50px 130px;
+    background-color: #EEEFF3;
+    margin: 0px 0px;
+    padding: 120px 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -457,7 +461,7 @@ nav .btns button:last-child{
 footer{
     width: 100%;
     height: fit-content;
-    background-color: #3151d131;
+    background-color: rgba(255, 255, 255, 0.541);
     position: relative;
     overflow: hidden;
 }
@@ -548,6 +552,7 @@ footer .social i:hover{
     width: 100%;
     height: 100dvh;
     position: relative;
+    background-color: #C9D0EC;
 }
 form{
     /* width: 28%; */
@@ -560,6 +565,7 @@ form{
 }
 .form-nav{
     padding: 0px 130px;
+    background-color: #C9D0EC;
 }
 form .top{
     margin-bottom: 20px;
