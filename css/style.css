@@ -1215,7 +1215,7 @@ form .bottom button {
 @media screen and (max-width: 480px) {
   .banner .banner-left {
     width: 100%;
-    top: -290px;
+    top: -230px;
   }
   .banner .banner-right {
     width: 100%;
@@ -1232,8 +1232,8 @@ form .bottom button {
   }
   .banner .banner-right img {
     bottom: 0;
-    width: 100%;
-    left: 0;
+    width: 120%;
+    left: -20px;
     /* margin-left: 0px !important; */
   }
   .banner .banner-left h1 {
@@ -1243,10 +1243,10 @@ form .bottom button {
     font-size: 15px;
   }
   header {
-    min-height: 750px;
+    min-height: 700px;
   }
   .banner .banner-right::before {
-    top: -220px;
+    top: -180px;
     left: 0px;
     width: 100px;
     height: 33px;
