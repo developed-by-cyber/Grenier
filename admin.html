@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adim</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  </head>
+  <body>
+    <nav class="mobile-nav mob">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+      </a>
+      <i class="fa fa-bars" onclick="show()"></i>
+      <div class="side-menu">
+        <div class="top">
+          <a href="index.html" class="log">
+            <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+          </a>
+          <i class="fa fa-close" onclick="hide()"></i>
+        </div>
+        <div class="bottom">
+          <ul class="nav-list">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Shop1.html">Shop</a></li>
+            <li><a href="#work">How It Works</a></li>
+            <li><a href="#sub">contact</a></li>
+          </ul>
+          <div class="btns">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="register.html">Register</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="form-nav">
+      <a href="index.html" class="log">
+        <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+        <!-- <h1 class="logo">Grenier</h1> -->
+      </a>
+      <ul class="nav-list">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="Shop1.html">Shop</a></li>
+        <li><a href="index.html">How It Works</a></li>
+        <li><a href="index.html">contact</a></li>
+      </ul>
+      <div class="btns">
+        <button><a href="login.html">Login</a></button>
+        <button><a href="register.html">Register</a></button>
+      </div>
+    </nav>
+    <div class="admin">
+        <div class="Users">
+            <h3 class="fw-bold">Users</h3>
+           <div class="tab-hold table-responsive">
+            <table class="w-100">
+                <tr class="header p-sm-4">
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Shipping Address</th>
+                    <th>Phone Number</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>Daniel Ibekwe</td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Daniel Ibekwe</td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Daniel Ibekwe</td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+            </table>
+           </div>
+        </div>
+        
+        <div class="orders">
+            <h3 class="fw-bold">Orders</h3>
+           <div class="tab-hold table-responsive">
+            <table class="w-100">
+                <tr class="header p-sm-4">
+                    <th>Order Name</th>
+                    <th>Email Address</th>
+                    <th>Shipping Address</th>
+                    <th>Phone Number</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Daniel Ibekwe</p>
+                        <p>dsdakjfnakjdfnkjadnfkja</p>
+                        <p>dsdakjfnakjdfnkjadnfkja</p>
+                        <p>dsdakjfnakjdfnkjadnfkja</p>
+                    </td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Daniel Ibekwe</td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Daniel Ibekwe</td>
+                    <td>danielibekwe@gmail.com</td>
+                    <td>23 Osusu road aba</td>
+                    <td>+2348022433849</td>
+                    <td></td>
+                </tr>
+            </table>
+           </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
