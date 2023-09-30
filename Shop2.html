@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop2</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/glider.min.css">
+</head>
+
+<body>
+    <div class="shop">
+        <nav class="mobile-nav mob">
+            <a href="index.html" class="log">
+                <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+            </a>
+            <i class="fa fa-bars" onclick="show()"></i>
+            <div class="side-menu">
+                <div class="top">
+                    <a href="index.html" class="log">
+                        <img src="./images/Logo-le-grenier-blanc.png" alt="" />
+                    </a>
+                    <i class="fa fa-close" onclick="hide()"></i>
+                </div>
+                <div class="bottom">
+                    <ul class="nav-list">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="Shop1.html">Shop</a></li>
+                        <li><a href="#work">How It Works</a></li>
+                        <li><a href="#sub">contact</a></li>
+                    </ul>
+                    <div class="btns">
+                        <button><a href="login.html">Login</a></button>
+                        <button><a href="register.html">Register</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="form-nav">
+            <a href="index.html" class="log">
+                <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+                <!-- <h1 class="logo">Grenier</h1> -->
+            </a>
+            <ul class="nav-list">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Shop1.html">Shop</a></li>
+                <li><a href="index.html">How It Works</a></li>
+                <li><a href="index.html">contact</a></li>
+            </ul>
+            <div class="btns">
+                <button><a href="login.html">Login</a></button>
+                <button><a href="register.html">Register</a></button>
+            </div>
+        </nav>
+        <div class="shop2 d-flex">
+            <div class="left">
+                <h4>Infos utiles</h4>
+                <hr />
+                <h2>CATEGORIES</h2>
+                <p>
+                    Nous offrons un choix de quatre catégories de produits essentiels,
+                    nécessaires pour profiter pleinement de nos services. Ces produits
+                    vous sont proposés à un tarif semi-grossiste avantageux.
+                </p>
+                <h2>PRODUITS</h2>
+                <p>
+                    Après avoir sélectionné les produits essentiels, vous aurez la
+                    possibilité de choisir parmi une gamme de produits complémentaires.
+                    Actuellement, ces produits sont disponibles au même prix que sur le
+                    marché. Le choix d'inclure ces produits est entièrement facultatif.
+                    Parmi les catégories de produits complémentaires que nous proposons,
+                    vous trouverez la mayonnaise, le café, les cubes aromatiques, les
+                    produits pour bébé, et bien d'autres encore. Il est important de
+                    noter que les produits complémentaires varient en fonction des
+                    besoins individuels de chaque acheteur. Par conséquent, nous ne
+                    sommes pas en mesure de proposer des tarifs préférentiels pour le
+                    moment, car cela dépend du volume total des achats mensuels, lequel
+                    n'est pas encore connu à l'avance.
+                </p>
+                <h2>PAIEMENTS</h2>
+                <p class="mb-0">
+                    Le montant total de vos achats, y compris les frais de livraison,
+                    vous sera clairement présenté avant que vous ne confirmiez votre
+                    commande. Vous aurez le choix entre deux options de paiement :
+                </p>
+                <li>Paiement via Orange Money</li>
+                <li>Paiement à la livraison</li>
+            </div>
+            <div class="right">
+                <h4>LES COMPLEMENTS</h4>
+                <hr />
+                <!-- 
+             PRODUCTS
+           -->
+                <div class="products">
+                    <div class="items2-hold row justify-content-between">
+                        <div class="items2 col-6">
+                            <h4 class="topper">Mayonnaise</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/mayonnaise-bama-946ml 3.png" alt="" />
+                                    <p class="title">BAMA</p>
+                                    <select>
+                                        <option>946 Ml</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">2 700 FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/CALVE_Mayonnaise_825_ml 1.png" alt="" />
+                                    <p class="title">Calvé</p>
+                                    <select>
+                                        <option>825 Ml</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">2 850 FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/petit-matin-1000ml 1.png" class="smalls" alt="" />
+                                    <p class="title">Petit Matin</p>
+                                    <select>
+                                        <option>1000 Ml</option>
+                                        <option>500 Ml</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">1 900 FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items2 col-6">
+                            <h4 class="topper">Produits Pasta Douman</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/spaghetti-pasta-douman-500g 1.png" alt="" />
+                                    <p class="title">Spaghetti</p>
+                                    <select>
+                                        <option>500 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">500 FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/Macaroni-pasta-douman-200g 1.png" alt="" />
+                                    <p class="title">Pâtes torsadée</p>
+                                    <select>
+                                        <option>200 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">450 FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/vermicelles-pasta-douman-500g 1.png" alt="" />
+                                    <p class="title">Vermicelles</p>
+                                    <select>
+                                        <option>500 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price">500 FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items2 col-6">
+                            <h4 class="topper">Café</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/nescafe-classic-200g-2 1 (1).png" alt="" />
+                                    <p class="title">Nescafé</p>
+                                    <select>
+                                        <option>200 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 900</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/nescafe-classic-200g-cafe 1.png" alt="" />
+                                    <p class="title">Nescafé Classic</p>
+                                    <select>
+                                        <option>200 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 700</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/cafe-maxwell-house-qualite-filtre-12-pieces-de-100g 1.png"
+                                        style="width: 25px;" alt="" />
+                                    <p class="title">Maxwell House</p>
+                                    <select>
+                                        <option>100 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 750</span> FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items2 col-6">
+                            <h4 class="topper">Conserves alimentaires</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/petit-pois 1.png" alt="" />
+                                    <p class="title">Petit pois</p>
+                                    <select>
+                                        <option>800 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 900</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/FOUNTY-SARDINES-A-LHUILE-VEGETALE-125G 1.png"
+                                        alt="" />
+                                    <p class="title">Sardines Founty</p>
+                                    <select>
+                                        <option>100 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>350</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/boite-de-thon-belle-france-125g 1.png" alt="" />
+                                    <p class="title">Rillettes de Thon</p>
+                                    <select>
+                                        <option>125 g</option>
+                                        <option>25 Kg</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 500</span> FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items2 col-6">
+                            <h4 class="topper">Cubes aromatiques</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/Cube-maggi-60 1.png" style="width: 60px;" alt="" />
+                                    <p class="title">Maggi</p>
+                                    <select>
+                                        <option>X24</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 700</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/carton-jumbo-arome-24-paquets 2.png"
+                                        style="width: 60px;" alt="" />
+                                    <p class="title">Jumbo</p>
+                                    <select>
+                                        <option>X24</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>32 775</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/Cube-maggi-60 1.png" style="width: 60px;" alt="" />
+                                    <p class="title">Petit Matin</p>
+                                    <select>
+                                        <option>50 Kg</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>32 775</span> FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items2 col-6">
+                            <h4 class="topper">Produits à tartiner</h4>
+                            <div class="its-hold">
+                                <div class="its">
+                                    <img src="./images/shop2-image/FROMAGE-LA-VACHE-QUI-RIT-120G 1 (1).png"
+                                        style="width: 40px;" alt="" />
+                                    <p class="title">La Vache qui rit</p>
+                                    <select>
+                                        <option>1 boite de 8</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>600</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/nutella-chocolat-pate-a-tartiner-450g 1.png"
+                                        alt="" />
+                                    <p class="title">Nutella</p>
+                                    <select>
+                                        <option>350 g</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 750</span> FCFA</div>
+                                </div>
+                                <div class="its">
+                                    <img src="./images/shop2-image/miel-naturel-miellerie-rahma 1.png" alt="" />
+                                    <p class="title">Miel naturel</p>
+                                    <select>
+                                        <option>200 Kg</option>
+                                    </select>
+                                    <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                    <div class="price"><span>2 500</span> FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="items2 col-6">
+                            <h4 class="topper">Lait pour bébé</h4>
+                            <div class="its-hold">
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/calisma-1er-age-830g-jusqu-a-6-mois 1.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Gallia Callisma</p>
+                                            <p class="title">0-6 mois</p>
+                                            <select>
+                                                <option>830 Kg</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/calisma-2eme-age-830g-de-6-a-12-mois.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Gallia Callisma</p>
+                                            <p class="title">6-12 mois</p>
+                                            <select>
+                                                <option>830 Kg</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/calisma-croissance-900g-des-12-mois.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Gallia Callisma</p>
+                                            <p class="title title2">+12 mois</p>
+                                            <select>
+                                                <option>830 Kg</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/calisma-junior-830g-des-18-mois.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Gallia Callisma</p>
+                                            <p class="title title2">+18 mois</p>
+                                            <select>
+                                                <option>830 Kg</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/nestle-cerelac-3-fruits-400g 1.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Cerelac dès</p>
+                                            <p class="title">6 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 250</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/nestle-cerelac-3-fruits-400g 1.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Cerelac dès</p>
+                                            <p class="title">6 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/nestle-cerelac-3-fruits-400g 1.png" style="width: 38px;" alt="" />
+                                            <p class="title2">Cerelac dès</p>
+                                            <p class="title">6 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/bledilait-en-poudre-1er-age-jusqu-a-6-mois-900g (1).png" style="width: 60px;" alt="" />
+                                            <p class="title2">Blédilait</p>
+                                            <p class="title">0-6 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/bledilait-en-poudre-2eme-age-de-6-a-12-mois-900g.png" style="width: 60px;" alt="" />
+                                            <p class="title2">Blédilait</p>
+                                            <p class="title">6-12 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/bledilait-croissance-des-12-mois.png" style="width: 60px;" alt="" />
+                                            <p class="title2">Blédilait</p>
+                                            <p class="title title2">+12 mois</p>
+                                            <select>
+                                                <option>830 Kg</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/bledilait-junior-des-18-mois-900g.png" style="width: 60px;" alt="" />
+                                            <p class="title2">Blédilait</p>
+                                            <p class="title title2">+18 mois</p>
+                                            <select>
+                                                <option>900 g</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="items2 col-6">
+                            <h4 class="topper">Couches pour bébé</h4>
+                            <div class="its-hold">
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-original-france-taille-2-86-couches-4kg-6kg (1).png" style="width: 50px;" alt="" />
+                                            <p class="title">Pampers N°2</p>
+                                            <select>
+                                                <option>86 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-originale-france-taille-3-74-couches-6kg-10kg.png" style="width: 50px;" alt="" />
+                                            <p class="title">Pampers N°3</p>
+                                            <select>
+                                                <option>74 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-original-france-58-couches-culottes-harmonie-nappy-pants.png" style="width: 50px;" alt="" />
+                                            <p class="title">Pampers N°4</p>
+                                            <select>
+                                                <option>58 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>14 500</span> FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-bebe-confy-2-3-a-6-kilos.png" style="width: 40px;" alt="" />
+                                            <p class="title">Confy N°2 </p>
+                                            <select>
+                                                <option>86 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-bebe-confy-3-4-a-9-kilos.png" style="width: 50px;" alt="" />
+                                            <p class="title">Confy N°3 </p>
+                                            <select>
+                                                <option>74 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>2 900</span> FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-bebe-confy-4-8-a-18-kilos.png" style="width: 30px;" alt="" />
+                                            <p class="title">Confy N°4 </p>
+                                            <select>
+                                                <option>60 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price"><span>14 500</span> FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+
+                              
+
+                                <div class="swiper swipe mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-softcare-n°2-36 (1).png" style="width: 48px;" alt="" />
+                                            <p class="title">Softcare N°2</p>
+                                            <select>
+                                                <option>36 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price">2 700 FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-softcare-n°3-32.png"  style="width: 40px;" alt="" />
+                                            <p class="title">Softcare N°3</p>
+                                            <select>
+                                                <option>32 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price">2 700 FCFA</div>
+                                        </div>
+                                        <div class="its swiper-slide">
+                                            <img src="./images/shop2-image/couche-softcare-n°4-28.png"  style="width: 32px;" alt="" />
+                                            <p class="title">Softcare N°4</p>
+                                            <select>
+                                                <option>28 couches</option>
+                                            </select>
+                                            <p class="quan"><span>-</span> x1 <span>+</span></p>
+                                            <div class="price">2 700 FCFA</div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="swiper-button-next nt"></div>
+                                    <div class="swiper-button-prev pr"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-hold">
+            <div class="left">
+                <a href="index.html" class="log">
+                    <img src="./images/Logo-le-grenier-blanc.png" width="60px" alt="" />
+                </a>
+                <ul class="nav-list">
+                    <li><a class="active" href="#a">Home</a></li>
+                    <li><a href="#a">Shop</a></li>
+                    <li><a href="#work">How It Works</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="Terms.html">Terms and condition</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <p>TEL: <span>+22375236523</span></p>
+                <p>EMAIL: <span>info@legrenier.com</span></p>
+                <p><span>Hamdallaye ACI 2000,</span></p>
+                <p><span>pres de Bougie BA, Bp:240</span></p>
+            </div>
+        </div>
+        <hr />
+        <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </footer>
+    <button onclick="helps2()" id="help" class="help">?</button>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 18,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
