@@ -423,9 +423,9 @@ nav .btns button:last-child {
 .sub {
   width: 100%;
   height: fit-content;
-  background-color: #eeeff3;
+  background-color: #ABB8E7;
   margin: 0px 0px;
-  padding: 120px 130px;
+  padding: 50px 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -439,26 +439,35 @@ nav .btns button:last-child {
 .sub .right {
   width: 38%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .sub .left h1 {
   color: #233a95;
 }
 .sub .right input {
   width: 100%;
-  height: 9vh;
+  height: 8vh;
   padding: 0px 20px;
   outline: none;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.479);
+  border: 1px solid #233a95;
+  margin-bottom: 20px;
+}
+.sub .right textarea{
+  width: 100%;
+  height: 17vh;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #233a95;
+  resize: none;
 }
 .sub .right button {
-  width: 90px;
-  height: 42px;
-  position: absolute;
-  right: 8px;
+  width: 100%;
+  height: 51px;
   border: none;
   background-color: #233a95;
   font-size: 14px;
@@ -905,55 +914,10 @@ form .bottom button {
   width: 70%;
   background-color: #F6E1DA;
   border-radius: 10px;
-  padding: 20px 20px !important;
+  padding: 40px 20px !important;
   height: fit-content;
 }
-/* .qq{
-  width: 100% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.hh{
-  width: 100% !important;
-}
-.qun{
-  width: 100% !important;
-  height: fit-content !important;
-  border: none !important;
-  outline: none;
-  background-color: transparent;
-  text-align: center;
-  padding-left: 0px !important;
-  font-weight: 500;
-  font-size: 15px;
-  cursor: auto;
-}
-.subs, .add{
-  font-weight: 400 !important;
-  font-size: 13px !important;
-  margin-top: 2px;
-  font-family: sans-serif;
-  color: #233a95;
-  cursor: pointer;
-}
-.subs{
-  position: relative;
-  left: 13px;
-  top: 0.7px;
-}
-.add{
-  position: relative;
-  right: 20px;
-}
-.x{
-  font-size: 16px;
-  font-weight: 500;
-  position: absolute;
-  left: 32px;
-  top: -1.5px;
-} */
+
 .row{
   margin: 0 !important;
 }
@@ -1037,6 +1001,49 @@ form .bottom button {
 .shop2 .right .products .items2-hold .items2 .price{
   font-weight: bold;
   font-size: 12px;
+}
+.shop2 .right .products .items2-hold .items2 .quantity{
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-weight: 500;
+}
+.shop2 .right .products .items2-hold .items2 .quantity i:first-child{
+  margin-right: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.shop2 .right .products .items2-hold .items2 .quantity i:last-child{
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.shop2 .right .products .items2-hold .items2 .quantity input{
+  /* font-size: 1.3em; */
+  /* padding: .5em; */
+  /* width: fit-content; */
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: auto;
+}
+.swiper .swiper-wrapper{
+  align-items: flex-end !important;
+}
+.vali{
+  padding: 8px 50px !important;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.116);
+  width: auto !important;
+  margin: auto;
 }
 
 /* trems page */
@@ -1395,7 +1402,9 @@ form .bottom button {
     display: none;
   }
   .mobile-product{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 80%;
   }
@@ -1426,6 +1435,16 @@ form .bottom button {
     border-radius: 20px;
     background: #CFD8FA;
     margin-bottom: 20px;
+  }
+  .mobile-product button{
+    border: none;
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: #233a95;
+    color: white;
+    margin: 10px;
+
   }
   .mobile-product .pros .name{
     text-align: center;
@@ -1566,7 +1585,33 @@ form .bottom button {
     font-size: 12px;
     font-weight: bold;
   }
-
+  .nt{
+    top: 20px !important;
+    right: -10px !important;
+  }
+  .pr{
+    top: 20px !important;
+    left: -10px !important;
+  }
+  .shop2 .right .products .items2-hold .items2{
+    padding: 15px 15px !important;
+  }
+  .swipe{
+    width: 25% !important;
+  }
+  .swiper .swiper-wrapper{
+    align-items: flex-end !important;
+  }
+  .tot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0px !important;
+  }
+  .vali{
+    width: 100% !important;
+  }
   .Terms p {
     font-size: 14px;
   }

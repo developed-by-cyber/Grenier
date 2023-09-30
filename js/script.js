@@ -40,6 +40,21 @@ function helps2() {
   help2.classList.toggle("helps");
 }
 
+// Quantity Function
+let quns = document.querySelectorAll(".qun");
+let addBtn = document.querySelectorAll(".addBtn");
+let subBtn = document.querySelectorAll(".subsBtn");
+
+quns.forEach((qun) =>{
+  qun.addEventListener("input", resizeInput);
+resizeInput.call(qun);
+})
+
+function resizeInput(){
+  this.style.width = this.value.length + "ch";
+}
+
+
 // let qun = document.querySelectorAll(".qun");
 // let add = document.querySelectorAll(".add");
 // let sub = document.querySelectorAll(".subs");
